@@ -6,17 +6,23 @@ function squareNumber(number) {
   return square;
 }
 
+squareNumber(3);
+
 function halfNumber(number) {
   var result = number / 2;
   console.log(`Half of ${number} is ${result}`);
   return result;
 }
 
+halfNumber(5);
+
 function percentOf(number1, number2) {
   var percent = number1 / number2;
   console.log(`${number1} is ${percent * 100}% of ${number2}`);
   return percent;
 }
+
+percentOf(2,4);
 
 function areaOfCircle(radius) {
   var area = Math.PI * (radius * radius);
@@ -25,6 +31,8 @@ function areaOfCircle(radius) {
   console.log(`Bonus: The area for a circle with radius ${radius} is ${bonus}`);
   return bonus;
 }
+
+areaOfCircle(2);
 
 function combinedFunction(number) {
   var half = halfNumber(number);

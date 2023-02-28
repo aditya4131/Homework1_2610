@@ -1,6 +1,6 @@
 // Aditya Srivastava
 
-var letters_of_word = ["i", "n", "d", "i", "a"];
+var letters_of_word = ["c", "l", "o", "u", "d"];
 var guessed_letters = [];
 var letter;
 
@@ -12,8 +12,7 @@ function guessLetter(letter) {
       }
     }
     console.log(guessed_letters);
-
-    if (letters_of_word.length == 0) {
+    if (letters_of_word.length == guessed_letters.length) {
       console.log("Congratulations, you won the game");
     } else {
       console.log("Congratulations, you found a valid letter");
@@ -28,6 +27,8 @@ function guessLetter(letter) {
   }
 }
 
-guessLetter("i");
-guessLetter("n");
+guessLetter("c");
+guessLetter("l");
+guessLetter("o");
+guessLetter("u");
 guessLetter("d");
